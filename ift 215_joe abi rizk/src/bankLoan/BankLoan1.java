@@ -1,6 +1,7 @@
 package bankLoan;
 
 import java.awt.event.KeyEvent;
+import javax.swing.JOptionPane;
 import project.code;
 
 /*
@@ -21,7 +22,9 @@ public class BankLoan1 extends javax.swing.JFrame {
     public BankLoan1() {
      
         initComponents();
+        rbCar.setSelected(true);
         rootPane.setDefaultButton(jButton1);
+        this.setTitle("Bank Loan"); 
     }
 
     /**
@@ -275,9 +278,9 @@ char c = evt.getKeyChar();
         // TODO add your handling code here:                                      
    int amount = Integer.parseInt(jTextField1.getText().trim());
     if((jRadioButton1.isSelected())&&((amount<0)||(amount>30000))){
-       jTextField1.showMessageDialog(this, "Car loan amount must be between 0 and 30 000,","Warning",jTextField1.WARNING_MESSAGE);
+       JOptionPane.showMessageDialog(this, "Car loan amount must be between 0 and 30 000,","Warning",JOptionPane.WARNING_MESSAGE);
     }else if((jRadioButton2.isSelected())&&((amount<0)||(amount>300000))){
-        jTextField1.showMessageDialog(this, "House loan amount must be between 0 and 300 000,","Warning",jTextField1.WARNING_MESSAGE);
+        JOptionPane.showMessageDialog(this, "House loan amount must be between 0 and 300 000,","Warning",JOptionPane.WARNING_MESSAGE);
     }else{
     }
     {
