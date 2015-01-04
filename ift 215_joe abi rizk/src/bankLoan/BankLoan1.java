@@ -216,7 +216,7 @@ public class BankLoan1 extends javax.swing.JFrame {
     private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
 // TODO add your handling code here:
         char c=evt.getKeyChar();
-        if(!(Character.isDigit(c) || (c==KeyEvent.VK_BACK_SPACE) || c==KeyEvent.VK_DELETE)){
+        if(!(Character.isDigit(c) || (c==KeyEvent.VK_ENTER) || c==KeyEvent.VK_DELETE)){
             evt.consume();
         }
     }//GEN-LAST:event_jTextField1KeyTyped
