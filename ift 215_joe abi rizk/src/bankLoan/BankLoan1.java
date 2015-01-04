@@ -22,7 +22,7 @@ public class BankLoan1 extends javax.swing.JFrame {
     public BankLoan1() {
      
         initComponents();
-        rbCar.setSelected(true);
+        jRadioButton1.setSelected(true);
         rootPane.setDefaultButton(jButton1);
         this.setTitle("Bank Loan"); 
     }
